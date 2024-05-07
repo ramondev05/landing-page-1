@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #222;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.07);
+}
+
+.titulo {
+    padding: 20px;
+}
+
+.titulo h1 {
+    font-size: 36px;
+    line-height: 30px;
+}
+
+.subtitulo h2 {
+    line-height: 40px;
+}
+
+.subtitulo h2 span {
+    color: black;
+    font-size: 44px;
+}
+
+header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 80px;
+}
+
+/* Seção 2 */
+
+section {
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#section2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 90px;
+}
+
+.texto1{
+    max-width: 600px;
+    font-size: 16px;
+}
+
+.img-flut img {
+    border-radius: 60px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/* Seção 3 */
+
+#section3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 90px;
+    background-color: #222;
+    margin: 20px;
+    padding: 40px;
+}
+
+.texto2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+video{
+    border-radius: 10px;
+}
+
+/* Seção 4 */
+
+#section4 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.depoimentos {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f8f8f8;
+}
+
+.clientes {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    width: 45%;
+    margin: 20px;
+    background-color: #222;
+    border-radius: 8px;
+}
+
+img {
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+p {
+    padding: 10px;
+}
+
+/* Seção 5 */
+
+#section5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #222;
+    margin: 20px;
+    padding: 40px;
+}
+
+section #section5 .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formulario {
+    min-height: 200px;
+    min-width: 300px;
+    background-color: black;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.nome1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem;
+    border-radius: 8px;
+    margin-top: 3px;
+}
+
+.email1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem;
+    border-radius: 8px;
+    margin-top: 3px;
+}
+
+.mensagem1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem;
+    border-radius: 8px;
+    margin-top: 3px;
+}
+
+#botao {
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #f8fafc;
+    padding: 0.5rem 0;
+    margin: 10px 0px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #222;
+    width: 100%;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
